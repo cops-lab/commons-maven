@@ -8,11 +8,11 @@
     </parent>
 
     <artifactId>commons-maven</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <properties>
         <!-- automatically set through: mvn versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=... -->
-        <project.build.outputTimestamp>2023-08-17T23:17:27Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2023-09-07T22:55:10Z</project.build.outputTimestamp>
         <jackson.version>2.15.2</jackson.version>
     </properties>
 
