@@ -133,4 +133,14 @@ public class MavenResolverData {
             }
         }
     }
+
+    public synchronized Set<String> findVersions(GA ga, long findAt) {
+        var versions = new HashSet<String>();
+        for (var pom : pomsForGA.getOrDefault(ga, Set.of())) {
+            if (findAt >= pom.releaseDate) {
+                versions.add(pom.version);
+            }
+        }
+        return versions;
+    }
 }
